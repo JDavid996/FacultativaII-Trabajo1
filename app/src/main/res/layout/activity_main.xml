@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1951"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button_AgregarAsignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#4CAF50"
+        android:onClick="agregar"
+        android:text="Agregar"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C32020"
+        app:layout_constraintStart_toEndOf="@+id/editText_AgregarAsignaturas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_AgregarAsignaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nueva asignatura"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_AgregarAsignatura"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView_Asignaturas"
+        android:layout_width="409dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_MisAsignaturas"
+        app:layout_constraintTop_toTopOf="parent"></ListView>
+
+    <TextView
+        android:id="@+id/textView_MisAsignaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Mis asignaturas"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AgregarAsignaturas" />
+</androidx.constraintlayout.widget.ConstraintLayout>

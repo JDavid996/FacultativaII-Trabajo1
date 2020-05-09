@@ -1,0 +1,4 @@
+#Fri May 08 15:17:26 CST 2020
+base.0=C\:\\Users\\FAREM_B4_17\\Downloads\\AsignaturasTrabajo1-20200508T180212Z-001\\AsignaturasTrabajo1\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
